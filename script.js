@@ -30,3 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("menu-active");
   });
 });
+const burger = document.getElementById("burger");
+const imageCaption = document.querySelector(".image-caption");
+
+burger.addEventListener("click", () => {
+  imageCaption.classList.toggle("hidden");
+});
