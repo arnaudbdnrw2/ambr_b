@@ -304,7 +304,6 @@ h1 {
   grid-template-areas: "left gallery right";
   gap: 2rem;
   align-items: start;
-  margin-top: 100px;
   padding: 2rem;
 }
 
@@ -590,6 +589,10 @@ h1 {
   font-style: normal;
 }
 
-.hidden {
-  display: none; 
+img.medal {
+  transition: transform 4s ease;
+}
+
+img.medal:hover {
+  transform: rotate(180deg);
 }
