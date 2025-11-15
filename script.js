@@ -36,3 +36,4 @@ const imageCaption = document.querySelector(".image-caption");
 burger.addEventListener("click", () => {
   imageCaption.classList.toggle("hidden");
 });
+

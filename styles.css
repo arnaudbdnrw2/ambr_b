@@ -596,3 +596,20 @@ img.medal {
 img.medal:hover {
   transform: rotate(180deg);
 }
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.insta {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insta_name {
+  font-family: AKIRA;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
