@@ -30,7 +30,14 @@ a {
   padding-right: 25px;
   margin-bottom: 20px;
 }
-
+.street {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.street a {
+  margin: 10px;
+}
 .imgcentr {
   margin: 25px;
 }
