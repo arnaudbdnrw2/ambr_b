@@ -53,3 +53,35 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("menu-active");
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const correctPassword = "1535"; // ← CHANGE LE CODE ICI
+
+  const overlay = document.getElementById("password-overlay");
+  const input = document.getElementById("password-input");
+  const button = document.getElementById("password-submit");
+  const error = document.getElementById("password-error");
+
+  // Si déjà validé
+  if (localStorage.getItem("accessGranted") === "true") {
+    overlay.style.display = "none";
+  }
+
+  button.addEventListener("click", checkPassword);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") checkPassword();
+  });
+
+  function checkPassword() {
+    if (input.value === correctPassword) {
+      localStorage.setItem("accessGranted", "true");
+      overlay.style.opacity = "0";
+      setTimeout(() => {
+        overlay.style.display = "none";
+      }, 300);
+    } else {
+      error.style.display = "block";
+    }
+  }
+});

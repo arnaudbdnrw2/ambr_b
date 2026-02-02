@@ -7,7 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Nom -->
+
+
+
+    <div class="password-overlay" id="password-overlay">
+  <div class="password-box">
+    <p>Accès protégé</p>
+    <input
+      type="password"
+      id="password-input"
+      placeholder="Entrer le code"
+    />
+    <button id="password-submit">Entrer</button>
+    <p class="password-error" id="password-error">Code incorrect</p>
+  </div>
+</div>
+
+
+
+
 
    <div class="header1"> 
             <div class="arnaud">   <a href="index.html"> <h1 >_arnaud.B</h1> </a>  </div>
@@ -17,10 +35,9 @@
 
    </div>          <div class="menu-underline"></div> <!-- ligne sous le titre -->
 
-
-  <main class="home">
+  <main class="home-galerie">
     <!-- COLONNE GAUCHE -->
-    <div class="menu-side left">
+  <div class="menu-side left">
 
       <div class="menu-block">
         <a href="#" class="menu-item">shootings</a>
@@ -37,8 +54,8 @@
                   <div class="menu-underline"></div> <!-- ligne sous le titre -->
 
         <div class="submenu">
-          <a href="DL.html" class="submenu-item">dans l'ombre</a>
-          <a href="0058.html" class="submenu-item"> minuit 58</a>
+          <a href="DL.html" class="submenu-item">_dans l'ombre</a>
+          <a href="0058.html" class="submenu-item"> _minuit 58</a>
         </div>
       </div>
  <div class="menu-block">
@@ -53,34 +70,40 @@
     </div>
 
     <!-- IMAGE CENTRALE -->
-   <div class="center-image">
-    <p class="street">
+     
+   <div class="galerie-photos">
+      <p class="image-caption">  Les correspondances de mon arrière grand-père avec Marguerite, qui deviendra sa femme un an plus tard. Âgés de 21 ans tous les deux, ce receuil retrace leurs échanges épistolaires du point de vue de Thomas. Pour voir la retranscription complète : <a href="https://www.instagram.com/arnaud_bdn"> la joie immanente. </a>
+</p>
+      <div class="photo-grid">
        
-            <a href="paris.html"> Paris </a>
-                        <a href="mtl.html"> Montréal </a>
-            <a href="oujda.html"> وجدة </a>
+    <img src="img/joie/7c49eaad-b5fa-4a49-ba0c-421b10d2b897.jpg" height="500px">
 
-       
-    </p>
-</div>
+    <img src="img/joie/2bd577ef-ef3f-4df4-a8e7-c32140f00bad (1).jpg" height="500px">
+          <img src="img/joie/2bd577ef-ef3f-4df4-a8e7-c32140f00bad.jpg" height="500px">
+    <img src="img/joie/44beea9a-086c-48fe-8d6e-dafd23998ed4.jpg" height="500px">
 
+
+    </div>
+ 
+    </div>
 
     <!-- COLONNE DROITE -->
   <div class="menu-side right">
+ <div class="menu-side right">
 
       <div class="menu-block">
-        <a href="#" class="menu-item">documentaires & travaux </a>
-                  <div class="menu-underline"></div> <!-- ligne sous le titre -->
+        <a href="#" class="menu-item">documentaires</a>
 
         <div class="submenu">
           <a href="desmainsetdesvisages.html" class="submenu-item">des mains et des visages</a>
+          <a href="joieimmanente.html" class="submenu-item">la joie immanente</a>
          
         </div>
 
       </div>
-
-<div class="menu-block">
+    <div class="menu-block">
         <a href="#" class="menu-item">clips</a>
+          <div class="menu-underline"></div> <!-- ligne sous le titre -->
 
         <div class="submenu">
           <a href="91.html" class="submenu-item">91 problèmes</a>
@@ -90,9 +113,10 @@
         </div>
       <div class="menu-block">
         <a href="#" class="menu-item">contact</a>
+          <div class="menu-underline"></div> <!-- ligne sous le titre -->
 
         <div class="submenu">
-          <a href="https://www.instagram.com/arnaud_bdn" class="submenu-item">instagram</a>
+          <a href="#" class="submenu-item">instagram</a>
           <a href="#" class="submenu-item">mail</a>
       
    
@@ -100,14 +124,10 @@
         
         
       </div>
-      </div>
-  </main>
-
-
-  <script src="script.js"></script>
-
+      
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Photo en grand">
+</div>
+  <script src="scriptshoot1.js"></script>
     </div>
-    <!-- Icône menu burger -->
-
-
-  </body>
